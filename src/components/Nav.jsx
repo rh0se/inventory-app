@@ -3,7 +3,7 @@ import Logo from "../assets/images/Logo.png";
 import search from "../assets/images/search.png";
 import avatar from "../assets/images/avatar.png";
 import arrow from "../assets/images/arrow.png";
-
+import { Link } from 'react-router-dom'
 const Nav = () => {
   return (
     <>
@@ -12,9 +12,13 @@ const Nav = () => {
             <img src={Logo} alt="logo" />
         </div>
         <div className='flex items-center gap-[8px] md:w-[187px] w-[150px]'>
-            <img src={avatar} alt='avatar'/>
-            <p>John Kennedy</p>
+          <Link to="/admin">
+          <img src={avatar} alt='avatar'/>
+            
+            <p></p>
             <img src={arrow} alt='arrow'/>
+          </Link>
+            
         </div>
     </nav>
     </>
