@@ -120,7 +120,7 @@ const Products = ({ addToCart }) => {
       )}
 
       {/* Categories Section */}
-      <div className="mt-8 w-screen flex flex-col items-center justify-center text-center">
+      <div className="mt-8 laptop:w-[80vw] flex flex-col items-center justify-center text-center">
         <h1 className="text-[32px] font-semibold text-navfont">Categories</h1>
         <div className="flex flex-wrap gap-6 mt-6">
           {categories.map((category) => (

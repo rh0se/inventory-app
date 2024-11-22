@@ -98,9 +98,7 @@ const AdminProducts = () => {
             <p className='text-sm'>{selectedCategory}</p> {/* Displays selected category */}
           </div>
         </div>
-        <button className='md:text-white md:bg-navfont md:rounded-md mx-10 p-2 md:block hidden'>
-          Add Product
-        </button>
+        
       </div>
 
       {/* Categories List and Header */}
@@ -126,10 +124,10 @@ const AdminProducts = () => {
             {loading ? (
               <p>Loading products...</p>
             ) : (
-              <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 mt-6 ml-[45px] mr-5 lg:w-[893px]">
+              <div className="grid md:grid-cols-2 grid-cols-1 desktop:grid-cols-3 gap-6 mt-6 md:ml-[45px] mr-5 desktop:w-[893px]">
                 {products.length > 0 ? (
                   products.slice(0, 9).map(product => (
-                    <div key={product.id} className="border p-4">
+                    <div key={product.id} className="p-4 max-w-[409px] flex flex-col gap-[16px] cursor-pointer">
                       <img
                         src={product.image}
                         alt={product.title}
@@ -161,10 +159,6 @@ const AdminProducts = () => {
         </div>
       </div>
 
-      {/* Add Product Button for smaller screens */}
-      <button className='text-white bg-navfont rounded-md mx-10 p-2 md:hidden mt-10'>
-        Add Product
-      </button>
 
       {/* Add Inventory Dialog (Modal) */}
       {showDialog && currentProduct && (

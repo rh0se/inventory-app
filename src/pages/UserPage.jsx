@@ -28,7 +28,7 @@ const UserPage = () => {
     <>
       <Nav />
       <Hero />
-      <div className="md:flex">
+      <div className="desktop:flex">
         {/* Pass addToCart function to Products and cartItems, setCartItems to Cart */}
         <Products addToCart={addToCart} />
         <Cart cartItems={cartItems} setCartItems={setCartItems} />

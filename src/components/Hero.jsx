@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <>
     <div>
-      <div className='bg-heroBg font-sans lg:w-[1200px] min-h-[367px] rounded-[50px] m-auto relative'>
+      <div className='bg-heroBg font-sans desktop:w-[1200px] min-h-[367px] rounded-[50px] m-auto relative'>
         <div className='absolute right-0 -top-0 lg:block hidden'>
             <img src={Rectangletop} className='rounded-tr-[50px]' alt="" />
         </div>
