@@ -29,7 +29,7 @@ const Cart = ({ cartItems, setCartItems, setSelectedProduct, setQuantity }) => {
   };
 
   return (
-    <section className="md:pt-[150px] font-sans">
+    <section className="md:pt-[150px]  pt-4 font-sans">
       <div className="font-sans w-[307px] p-6 rounded-[20px] m-auto shadow-md">
         <h1 className="text-[#2E3A6E] text-xl text-center font-semibold">Your Order</h1>
         {cartItems.length === 0 ? (

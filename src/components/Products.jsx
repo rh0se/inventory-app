@@ -52,7 +52,7 @@ const Products = ({ addToCart }) => {
   };
 
   return (
-    <div className="pt-[64px] font-sans text-navfont max-w-[834px] lg:ml-[120px]">
+    <div className="pt-[64px] font-sans text-navfont max-w-[834px] lg:ml-[120px] ml-2">
       <h1 className="font-semibold text-[28px] mb-4 md:text-left text-center">Order Again</h1>
 
       {loading ? (
@@ -97,8 +97,8 @@ const Products = ({ addToCart }) => {
               className="h-48 object-contain mb-4 rounded-lg"
             />
             <h2 className="text-2xl font-semibold mb-2 text-navfont">{selectedProduct.title}</h2>
-            <p className="text-gray-500 text-lg mb-4 text-dialogbg">{`$${selectedProduct.price}`}</p>
-
+            <p className="text-lg mb-4 text-dialogbg">{`$${selectedProduct.price}`}</p>
+            <p className='text-dialogbg max-w-[428px]'>Make ordering your food easier with our mobile app. You can get it on the Google Play Store.</p>
             <div className="flex w-[108px] bg-offwhite self-center rounded-3xl items-center justify-between m-5">
               <button onClick={() => handleQuantityChange(-1)} className="px-4 py-2 rounded-lg">
                 <img src={minus} />
