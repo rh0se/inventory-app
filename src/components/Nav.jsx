@@ -11,11 +11,11 @@ const Nav = () => {
         <div className='md:w-[123px] md:h-[30px] w-[100px]'>
             <img src={Logo} alt="logo" />
         </div>
-        <div className='flex items-center gap-[8px] md:w-[187px] w-[150px]'>
-          <Link to="/admin">
+        <div >
+          <Link to="/admin" className='flex items-center gap-[8px] md:w-[187px] w-[150px]'>
           <img src={avatar} alt='avatar'/>
             
-            <p></p>
+            <p>John Kennedy</p>
             <img src={arrow} alt='arrow'/>
           </Link>
             
