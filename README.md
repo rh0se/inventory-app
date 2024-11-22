@@ -1,6 +1,6 @@
 # Inventory App
 
-This **Inventory App** is a modern web application built using **Vite**, **Tailwind CSS**, and **CSS** for styling. The application supports role-based navigation between **User Pages** and **Admin Pages** and provides features for browsing categories, managing products, and a dynamic shopping cart. The application is deployed on **Vercel** for seamless hosting and scalability.
+This [**Inventory App**](https://inventory-1khekcb9v-rh0ses-projects.vercel.app/) is a modern web application built using **Vite**, **Tailwind CSS**, and **CSS** for styling. The application supports role-based navigation between **User Pages** and **Admin Pages** and provides features for browsing categories, managing products, and a dynamic shopping cart. The application is deployed on **Vercel** for seamless hosting and scalability.
 
 ---
 
