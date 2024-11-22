@@ -124,7 +124,7 @@ const AdminProducts = () => {
             {loading ? (
               <p>Loading products...</p>
             ) : (
-              <div className="grid md:grid-cols-2 grid-cols-1 desktop:grid-cols-3 gap-6 mt-6 md:ml-[45px] mr-5 desktop:w-[893px]">
+              <div className="grid md:grid-cols-2 grid-cols-1 desktop:grid-cols-3 gap-6 m-auto mt-6 md:ml-[45px] md:mr-5 desktop:w-[893px]">
                 {products.length > 0 ? (
                   products.slice(0, 9).map(product => (
                     <div key={product.id} className="p-4 max-w-[409px] flex flex-col gap-[16px] cursor-pointer">
